@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3
-    </title>
+    <title>Assignment 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+  font-family: "Manrope", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+    </style>
 </head>
+
 <body>
-    
+    <header class="bg-gradient-to-t from-[#f3f1f1] to-[#FFFFFF] pb-32">
+        <div class="flex content-center justify-around mt-14 ">
+            <div class="flex flex-row gap-1 items-center">
+                <div class=" w-8 h-8 rounded-full bg-[#ABEF5F]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 content-center">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <h3 class="font-manrope text-3xl font-extrabold">Rinterio</h3>
+            </div>
+            <div class="flex flex-row gap-10">
+                <a class="font-manrope text-base font-bold" href="">Home</a>
+                <a class="font-manrope text-base font-normal text-gray-400" href="">Services</a>
+                <a class="font-manrope text-base font-normal text-gray-400" href="">Portfolio</a>
+                <a class="font-manrope text-base font-normal text-gray-400" href="">Blogs</a>
+                <a class="font-manrope text-base font-normal text-gray-400" href="">Contact Us</a>
+            </div>
+            <div class="flex gap-4 content-center">
+                <div class="h-12 w-12 rounded-full border-2 bg-white  px-2 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                        <path fill-rule="evenodd"
+                            d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+
+                </div>
+                <div class="h-12 w-12 rounded-full border-2 bg-white py-3 px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+
+                </div>
+                <div>
+                    <button
+                        class="font-manrope text-xl font-extraboldv bg-[#ABEF5F] rounded-3xl w-52 h-14 flex justify-center gap-2 px-5 py-3">Book
+                        Consult <div class="h-8 w-8 px-2 py-2 bg-black rounded-full ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-white ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-6 ">
+            <img src="styles/assets/banner.png" alt="">
+            <h3 class="font-manrope text-6xl font-extrabold text-center">A barn house of this design has a <br> striking
+                appearance</h3>
+            <p class="w-4/6 text-center font-manrope text-sm font-medium text-[#494949]">The barn house captivates with
+                its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents,
+                and large windows that flood the space with natural light.</p>
+            <button
+                class="h-14 w-52 rounded-3xl bg-[#ABEF5F80] flex gap-2 justify-center py-3 px-6 text-xl font-bold ">View
+                Details
+                <div class="h-8 w-8 px-2 py-2 bg-[#ABEF5F] rounded-full ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 ">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Thoughtful design section -->
+
+        <div class="flex justify-around pt-24 bg-[#F4F4F4] mt-32">
+            <div class="flex gap-6 flex-col">
+                <img class="" src="styles/assets/Vector.png" alt="">
+                <button class="w-32 h-9 bg-white font-manrope font-bold text-sm flex gap-1 rounded-3xl ">
+                     
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg> 
+                    About Us</button>
+                <h3 class="font-manrope font-bold text-4xl">We design thoughtful, <br> liveable spaces</h3>
+                <p class="font-manrope text-sm font-medium text-[#494949]">The barn house captivates with its blend of rustic charm and <br>
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class="flex gap-6">
+                    <img src="styles/assets/commercial.png" alt="">
+                    <div>
+                        <h3 class="font-manrope text-lg font-extrabold  text-[#494949]">Commercial</h3>
+                        <p class="font-manrope text-sm font-medium text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <img src="styles/assets/residential.png" alt="">
+                    <div>
+                        <h3 class="font-manrope text-lg font-extrabold  text-[#494949]">Residential</h3>
+                        <p class="font-manrope text-sm font-medium text-[#737373]"> The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="styles/assets/Rectangle.png" alt="">
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
