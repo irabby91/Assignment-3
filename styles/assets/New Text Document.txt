@@ -1,0 +1,28 @@
+ <div class="flex gap-6 justify-center items-center max-sm:flex-col">
+                <div class="w-[274px] h-[228px]  bg-slate-200 rounded-xl px-9 py-5">
+                    <img src="styles/assets/img3.png" alt="">
+                </div>
+                <div class="flex gap-6 p-6 w-[573px]  h-[228px] border-black bg-white rounded-xl max-sm:flex-col">
+                    <img class="rounded-2xl" src="styles/assets/img4.png" alt="">
+                    <div class="flex justify-start flex-col gap-3">
+                        <h3 class="font-manrope font-extrabold text-2xl text-[#494949]">Commercial</h3>
+                        <p class="font-manrope font-medium text-[16px] text-[#737373]">The barn house captivates <br> with its
+                            blend of rustic charm and <br> modern.</p>
+                        <div class="flex  gap-2">
+                            <a class="font-manrope font-extrabold text-xl text-[#212121]" href="">View Details</a>
+                            <div class="h-8 w-8 justify-center bg-[#ABEF5F] rounded-full ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-[274px] h-[228px] rounded-xl p-2 bg-slate-300 px-9 py-5">
+                    <img src="styles/assets/img5.png" alt="">
+                </div>
+            </div>
