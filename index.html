@@ -9,19 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
-        .font-manrope{
-  font-family: "Manrope", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+        .font-manrope {
+            font-family: "Manrope", system-ui;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body>
     <header class="bg-gradient-to-t from-[#f3f1f1] to-[#FFFFFF] pb-32">
         <div class="flex content-center justify-around mt-14 ">
+            <!-- ICON OF THE COMPANY -->
             <div class="flex flex-row gap-1 items-center">
                 <div class=" w-8 h-8 rounded-full bg-[#ABEF5F]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -32,22 +36,21 @@
                 </div>
                 <h3 class="font-manrope text-3xl font-extrabold">Rinterio</h3>
             </div>
-            <div class="flex flex-row gap-10">
+            <div class=" max-sm:hidden flex flex-row gap-10 ">
                 <a class="font-manrope text-base font-bold" href="">Home</a>
                 <a class="font-manrope text-base font-normal text-gray-400" href="">Services</a>
                 <a class="font-manrope text-base font-normal text-gray-400" href="">Portfolio</a>
                 <a class="font-manrope text-base font-normal text-gray-400" href="">Blogs</a>
                 <a class="font-manrope text-base font-normal text-gray-400" href="">Contact Us</a>
             </div>
-            <div class="flex gap-4 content-center">
+            <!-- Corner Button Section Of Nav bar -->
+            <div class="flex gap-4 content-center max-sm:hidden">
                 <div class="h-12 w-12 rounded-full border-2 bg-white  px-2 py-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                         <path fill-rule="evenodd"
                             d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
                             clip-rule="evenodd" />
                     </svg>
-
-
                 </div>
                 <div class="h-12 w-12 rounded-full border-2 bg-white py-3 px-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -55,7 +58,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                     </svg>
-
                 </div>
                 <div>
                     <button
@@ -69,8 +71,26 @@
                         </div>
                     </button>
                 </div>
+                <details class="dropdown hidden max-sm:inline">
+                    <summary class="btn m-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </details>
             </div>
         </div>
+
+        <!-- Below nav bar section -->
         <div class="flex flex-col items-center gap-6 ">
             <img src="styles/assets/banner.png" alt="">
             <h3 class="font-manrope text-6xl font-extrabold text-center">A barn house of this design has a <br> striking
@@ -89,42 +109,82 @@
                     </svg>
                 </div>
             </button>
-        </div>
+
     </header>
-    <main>
+    <main class="bg-[#F4F4F4]">
         <!-- Thoughtful design section -->
 
-        <div class="flex justify-around pt-24 bg-[#F4F4F4] mt-32">
+        <div
+            class="flex justify-around pt-24  mt-32 max-sm:flex-col max-sm:pl-5 max-sm:pr-5 max-sm:items-center max-sm:gap-6">
             <div class="flex gap-6 flex-col">
                 <img class="" src="styles/assets/Vector.png" alt="">
                 <button class="w-32 h-9 bg-white font-manrope font-bold text-sm flex gap-1 rounded-3xl ">
-                     
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                    </svg> 
+                    </svg>
                     About Us</button>
-                <h3 class="font-manrope font-bold text-4xl">We design thoughtful, <br> liveable spaces</h3>
-                <p class="font-manrope text-sm font-medium text-[#494949]">The barn house captivates with its blend of rustic charm and <br>
+                <h3 class="font-manrope font-bold text-4xl max-sm:text-center">We design thoughtful, <br> liveable
+                    spaces</h3>
+                <p class="font-manrope text-sm font-medium text-[#494949] max-sm:text-center">The barn house captivates
+                    with its blend of rustic charm and <br>
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 <div class="flex gap-6">
                     <img src="styles/assets/commercial.png" alt="">
                     <div>
                         <h3 class="font-manrope text-lg font-extrabold  text-[#494949]">Commercial</h3>
-                        <p class="font-manrope text-sm font-medium text-[#737373]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        <p class="font-manrope text-sm font-medium text-[#737373]">The barn house captivates with its
+                            blend <br> of rustic charm and modern.</p>
                     </div>
                 </div>
                 <div class="flex gap-6">
                     <img src="styles/assets/residential.png" alt="">
                     <div>
                         <h3 class="font-manrope text-lg font-extrabold  text-[#494949]">Residential</h3>
-                        <p class="font-manrope text-sm font-medium text-[#737373]"> The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        <p class="font-manrope text-sm font-medium text-[#737373]"> The barn house captivates with its
+                            blend <br> of rustic charm and modern.</p>
                     </div>
                 </div>
             </div>
             <img src="styles/assets/Rectangle.png" alt="">
         </div>
+
+        <!-- Our Work Process -->
+         <div class="flex items-center flex-col">
+            <button class="w-44 h-9 rounded-3xl bg-[#FFFFFF] flex gap-1 pt-1 justify-center"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+              </svg>
+              How We Works</button>
+            <h3 class="font-manrope font-extrabold text-4xl text-[#212121] text-center">Our Work Process</h3>
+            <p class="font-manrope text-sm font-medium text-[#494949] text-center">The barn house captivates with its blend of rustic charm and modern sophistication,
+                <br> featuring weathered wood, sleek metal accents.
+
+            </p>
+            <div class="flex gap-6 justify-around">
+                <div class="w-72 h-56 p-6 bg-[#E7C1D3] rounded-2xl">
+                    <img src="styles/assets/concept.png" class="mb-2" alt="">
+                    <h3 class="font-manrope font-extrabold text-lg text-[#1C1C1C] mb-3">Concept</h3>
+                    <p class="font-manrope font-medium text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="w-72 h-56 p-6 bg-[#EFDA6E] rounded-2xl">
+                    <img src="styles/assets/flow-chart.png" class="mb-2" alt="">
+                    <h3 class="font-manrope font-extrabold text-lg text-[#1C1C1C] mb-3 ">Design Process</h3>
+                    <p class="font-manrope font-medium text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="w-72 h-56 p-6 bg-[#A4DAC3] rounded-2xl">
+                    <img src="styles/assets/vision.png" class="mb-2" alt="">
+                    <h3 class="font-manrope font-extrabold text-lg text-[#1C1C1C] mb-3">Supervision</h3>
+                    <p class="font-manrope font-medium text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div class="w-72 h-56 p-6 bg-[#77AAEA] rounded-2xl  gap-2">
+                    <img src="styles/assets/budget-planning.png" class="mb-2" alt="">
+                    <h3 class="font-manrope font-extrabold text-lg text-[#1C1C1C] mb-3">Budget Planning</h3>
+                    <p class="font-manrope font-medium text-sm text-[#494949]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+         </div>
 
     </main>
     <footer>
